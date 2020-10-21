@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="..\..\css\paths_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>HTML Learning Path</h1>
+  </header>
+
+  <hr id="head-body">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li><a href="..\..\index.html" id="back">Home</a></li>
+      <li><a href="html_learning.html" class="current">HTML</a></li>
+    </ol>
+  </nav>
+
+  <h3>HTML Mini tests</h3>
+  <ol>
+    <li><a href="forms.html">Forms</a></li>
+  </ol>
+  <hr>
+  <p>Html stands for <strong>Hypertext Markup Language</strong>.
+    It as a delcarative language that makes known of attributes to the computer.</p>
+
+  <hr>
+  <div class="card">
+    <h2>Paragraphs</h2>
+    Paragraph elements are made using <q>p</q>.
+    <code>
+      &lt;p&gt; Hello World &lt;/p&gt;
+    </code>
+    <div class="result">
+      <p>Hello World</p>
+    </div>
+    <div class="Note">
+      <small>Notes: p is a block style code with some initial styles linked to it by default.
+      </small>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Headline Tags</h2>
+    Headline tags makes it so that the page has a hierarchy of importance using <q>h1...6</q>-
+    <br><br>(1 being the highest importance, 6 being the least of importance (relative to headings)).
+    <code>
+      &lt;h1&gt; Hello World &lt;/h1&gt;
+    </code>
+    <div class="result">
+      <h1>Hello World</h1>
+    </div>
+    <div class="Note">
+      <small>Notes: p is a block style code with some initial styles linked to it by default.
+      </small>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Italics & Bold</h2>
+    There are different between visual (bold/italics) and meaning (bold/italics).
+    <br> For visual italics/bold, it is used with the normal <q>i</q> and <q>b</q>.
+    <br> For meaning behind the italics/bold, it is used with <q>em</q> and <q>strong</q>.
+
+    <code>
+      &lt;i&gt; Hello World &lt;/i&gt;<br>
+      &lt;em&gt; Hello World &lt;/em&gt;<br><br>
+      &lt;b&gt; Hello World &lt;/b&gt;<br>
+      &lt;strong&gt; Hello World &lt;/strong&gt;
+    </code>
+    <div class="result">
+      <i>Hello World</i><br>
+      <em>Hello World</em><br><br>
+      <b>Hello World</b><br>
+      <strong>Hello World</strong>
+    </div>
+
+    <div class="Note">
+      <small>Notes: They both may look the same, but there are different levels of importance in the code.
+      </small>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Lists</h2>
+    There are three types of lists: Unordered, Ordered, and Definition. <br>
+    Unordered lists = <q>ul</q> <br>
+    Ordered lists = <q>ol</q> <br>
+    Adding items to these lists = <q>li</q>
+    <code>
+      &lt;ul&gt; <br>
+      &lt;li&gt; Eggs &lt;/li&gt;<br>
+      &lt;li&gt; Milk &lt;/li&gt;<br>
+      &lt;/ul&gt; <br><br>
+
+      &lt;ol&gt; <br>
+      &lt;li&gt; Salt &lt;/li&gt;<br>
+      &lt;li&gt; Pepper &lt;/li&gt;<br>
+      &lt;/ol&gt;
+    </code>
+    <div class="result">
+      <ul>
+        <li>Eggs</li>
+        <li>Milk</li>
+      </ul>
+      <ol>
+        <li>Salt</li>
+        <li>Pepper</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Definition Lists</h2>
+    Are a little different in the sense that it is used for set definitions.
+    <code>
+      &lt;dt&gt;<br>
+        &lt;dl&gt;<br>
+        Bees <br>
+          &lt;dd&gt;an insect of a large group to which the honeybee belongs, including many solitary as well as social kinds.&lt;/dd&gt;<br>
+        &lt;/dl&gt;<br>
+      &lt;/dt&gt;
+    </code>
+    <div class="result">
+      <dt>
+        <dl class="Bees">
+          Bees
+          <dd>an insect of a large group to which the honeybee belongs, including many solitary as well as social kinds.</dd>
+        </dl>
+      </dt>
+    </div>
+    <div class="Note">
+      <small>Notes: Not as commonly used
+      </small>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Quoting</h2>
+    Can either use <q>blockquote</q> or <q>q</q> in order to let the computer know it is a quote.<br>
+    the <q>cite</q> element lets you cite the quote. <br>
+    <code>
+      &lt;blockquote&gt; <br>
+        According to all known laws
+        of aviation,
+        there is no way a bee
+        should be able to fly.
+        Its wings are too small to get
+        its fat little body off the ground.<br>
+      &lt;/blockquote&gt;<br>
+      &lt;cite&gt; Jerry Seinfeld &lt;/cite&gt;<br>
+    </code>
+    <div class="result">
+      <blockquote>
+        According to all known laws
+        of aviation,
+        there is no way a bee
+        should be able to fly.
+        Its wings are too small to get
+        its fat little body off the ground.
+      </blockquote>
+      <cite>Jerry Seinfeld</cite>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Date and Time</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Super/Sub Scripts</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Language</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>ARIA</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Comments</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Special Characters</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Links</h2>
+    time element lets you put in a date where the computer can understand it.<br>
+    <code>
+      &lt;time datetime="2020-05-28"&gt; May 28 &lt;/time&gt;
+    </code>
+    <div class="result">
+      <time datetime="2020-05-28">May 28</time>
+    </div>
+  </div>
+
+</body>
+
+</html>
